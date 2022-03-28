@@ -1,6 +1,5 @@
 ## 6.4
 
-from xml.dom.minidom import Element
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.keys import Keys
