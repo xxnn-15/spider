@@ -16,7 +16,7 @@ class RedisClient(object):
             Initialize proxies
         """
         self.db = redis.StrictRedis(host=host, port=port, password=password, decode_responses=True)
-    
+        
     def add(self, proxy, score=INITIAL_SCORE):
         """
             Add proxies and set score to INITIAL_SCORE(100)
