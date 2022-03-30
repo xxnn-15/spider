@@ -49,10 +49,9 @@ client = pymongo.MongoClient(MONGO_URL)
 db_mongo = client[MONGO_DB]
 
 
-
 def index_page(page, db):
     """
-        抓取索引页
+        抓取索引页å
     """
     print(f"正在爬取第{page}页")
     try:
