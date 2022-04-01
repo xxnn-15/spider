@@ -22,5 +22,6 @@ class Getter():
             for callback_label in range(self.crawler.__CrawlFuncCount__):
                 callback = self.crawler.__CrawlFunc__[callback_label]
                 proxies = self.crawler.get_proxies(callback)
-                for proxy in proxies:
-                    self.redis.add(proxy)
+                if proxies:
+                    for proxy in proxies:
+                        self.redis.add(proxy)
